@@ -1,0 +1,127 @@
+QMainWindow {
+    background-color: #121212;
+}
+
+#nameError, #pathError {
+    color: #7C0000;
+}
+
+QPushButton[flat="true"] {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+QPushButton[flat="true"]:hover {
+    background-color: #222;
+}
+
+QSlider::groove:horizontal {
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 12px;
+}
+
+QSlider::handle:horizontal {
+    background: #3F3F3F;
+    width: 12px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #525252;
+}
+
+QSlider::add-page:horizontal {
+    background: rgb(180, 180, 180);
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+QSlider::sub-page:horizontal {
+    background: rgb(100, 100, 100);
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+RecentProject {
+    padding: 10px;
+}
+
+RecentProject:hover {
+    background-color: #222;
+}
+
+QLineEdit {
+    background: #2A2A2A;
+    color: #cfd0d7;
+    border: 1px solid #525252;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border-color: #747474;
+}
+
+QTreeView {
+    color: #fff;
+    background-color: #121212;
+    border: none;
+}
+
+QTreeView QHeaderView::section {
+    padding-left: 5px;
+    color: #fff;
+    background-color: #2A2A2A;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+    border-image: none;
+    image: url(":/images/branch_closed.png");
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+    border-image: none;
+    image: url(":/images/branch_open.png");
+}
+
+QTreeView::item {
+    border: 1px solid transparent;
+}
+
+QTreeView::item:selected {
+    border-color: #4FA0F1;
+    background-color: #27609A;
+    color: #fff;
+}
+
+QMenu {
+    color: #fff;
+    background-color: #2A2A2A;
+    border: 1px solid #121212;
+}
+
+QMenu::item {
+    padding: 2px 25px 2px 20px;
+    border: 1px solid transparent;
+}
+
+QMenu::item:selected {
+    border-color: #4FA0F1;
+    background-color: #27609A;
+}
+
+QMenu::item:disabled {
+    color: #888;
+}
+
+QMenuBar {
+    color: #fff;
+    background-color: #121212;
+}
+
+QMenuBar::item:selected {
+    background-color: #545454;
+}
